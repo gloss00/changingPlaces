@@ -12,21 +12,20 @@
             </div>
 
     <main>
-        <div class = "container">
-            <table id = "dataTable" class="dataTable">
-            </table>
+        <div class="mapwrapper">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1BkdLTWUZFj0ex3dXBK1HLg2SIx0&hl=en" width="100%" height="700px">
+            </iframe>
+            <p id="demo"></P>
         </div>
     </main>
     <footer>
         <div class="nav">
-            <button type="button" class="button">Load Data</button>
-            <a class = "navLink" download = "changingplaces.csv" href="#" onclick="return ExcellentExport.csv(this, 'dataTable');">Export to CSV  |</a>
+            <button type="button" class="getLocation">Get Location</button>
             <a class = "navLink" href="#" onclick="location.reload();">Refresh Page  |</a>
             <a class = "navLink" href="map.html" >Map</a>
         </div>
     </footer>
 
-        <script src="scripts/main.js"></script>
-        <script src="scripts/excellentexport.js"></script>
+        <script src="scripts/map.js"></script>
     </body>
 </html>

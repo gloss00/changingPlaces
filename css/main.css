@@ -1,0 +1,98 @@
+*,
+*:before,
+*:after {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+.title {
+    padding: 10px;
+    height: 61px;
+    background-color: #0073BD;
+    width: auto;
+    position: fixed;
+    top: 0;
+    width: 99%;
+}
+
+.titleLink:link,
+.titleLink:visited,
+.titleLink:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.titleLink:hover {
+    color: #69f;
+    text-decoration: none;
+}
+
+.nav {
+    padding: 0 10px;
+    height: 61px;
+    background-color: #0073BD;
+    width: 99%;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+}
+
+.navLink:link,
+.navLink:visited,
+.navLink:active {
+font-size: 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0px 0px 0px;
+}
+
+.navLink:hover {
+    color: #69f;
+    text-decoration: none;
+}
+
+.buttonDiv {
+    height: 60px;
+    padding-right: 10px;
+}
+
+.button {
+    border-radius: 10px;
+    font-size: 0.7rem;
+    background-color: yellow;
+    height: 30px;
+}
+
+.getLocation {
+    border-radius: 10px;
+    font-size: 0.7rem;
+    background-color: yellow;
+    height: 30px;
+}
+
+.dataTable {
+    margin-top: 20px;
+    border: 3px solid #0073BD;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.dataTable th {
+    background-color: #0073BD;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 0.9rem;
+    height: 40px;
+    width: 200px;
+}
+
+.dataTable td {
+    width: 200px;
+    font-size: 0.8rem;
+    height: 40px;
+    padding: none;
+    word-wrap: break-word;
+    border: 1px solid #0073BD;
+    text-align: center;
+}
