@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>
             {% block pageTitle %}Changing Places{% endblock %}
         </title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/favicon.ico">
-
     </head>
 
     <body>
@@ -22,23 +20,16 @@
                         </p>
                     </div>
                 </div>
-
-                    <div id="skip">
-                        <a href="#staffNumber">Skip to Main Content</a>
-                    </div>
-                </div>
             </div>
         </header>
 
-    {% block body %}
-    no body block defined
-    {% endblock %}
+        {% block body %}
+        no body block defined
+        {% endblock %}
     </body>
 
     <footer>
         {% include "nunjucks/partials/footer.njk"%}
-        {% block footer %}
-        {% endblock %}
     </footer>
 
 <script type="text/javascript" src="scripts/hide.js"></script>

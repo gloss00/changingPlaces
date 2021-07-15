@@ -21,10 +21,7 @@ const gulpConfig = {
 function sassTask() {
     try {
         return gulp.src(gulpConfig.paths.scss)
-            .pipe(sass({outputStyle: 'compressed',
-                includePaths: [
-                    'node_modules/govuk_frontend'
-                ]}).on('error', sass.logError))
+            .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
             .pipe(gulp.dest(gulpConfig.paths.scssDest))
             .pipe(browserSync.reload({
                 stream: true
