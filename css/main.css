@@ -1,0 +1,69 @@
+
+html,
+body,
+*,
+*::before,
+*::after {
+    font-family: Arial !important;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* containers */
+.banner-wrapper {
+    background-color: #3f3f3f;
+    padding: 15px;
+    font-size: 2rem;
+}
+
+.banner {
+    margin-left: 15%;
+    color: aliceblue;
+}
+
+.service-name {
+    background-color: #3f3f3f;;
+}
+
+.body-wrapper {
+    height: 650px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 30px;
+    border-top: 10px solid #000;
+}
+
+.foot-wrapper {
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* table */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabel-data {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    height: 50px;
+}
+
+.header {
+    background-color: #3f3f3f;
+    color: #fff;
+    padding: 10px;
+}
+
+/* typography */
+.heading {
+    background-color: #ddf2ff;
+    color: #3f3f3f;
+}

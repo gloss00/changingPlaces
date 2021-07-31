@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            {% block pageTitle %}Changing Places{% endblock %}
+            Changing Places
         </title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css">
@@ -13,25 +13,27 @@
     <body>
         <header>
             <div>
-                <div class="bannerwrapper">
+                <div class="banner-wrapper">
                     <div class="banner">
                         <p class="service-name">
-                            {% block serviceName %} Changing Places {% endblock %}
+                            Changing Places
                         </p>
                     </div>
                 </div>
             </div>
         </header>
+        <main class='body-wrapper'>
+            <table class='table'>
+            </table>
+        </main>
 
-        {% block body %}
-        no body block defined
-        {% endblock %}
+
     </body>
 
-    <footer>
-        {% include "nunjucks/partials/footer.njk"%}
+    <footer class='foot-wrapper'>
+    
     </footer>
 
-<script type="text/javascript" src="scripts/hide.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
 
 </html>
