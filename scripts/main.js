@@ -34127,6 +34127,16 @@ const toilets = [
     }
 ];
 
+//listeners
+document.getElementById("displayTable").addEventListener("click", function() {
+    generateTable(table, toilets);
+});
+
+document.getElementById("createCsv").addEventListener("click", function() {
+    createCsv()
+});
+
+//create table
 function generateTableHead(table) {
     let thead = table.createTHead();
     let row = thead.insertRow();
@@ -34156,20 +34166,16 @@ function generateTable(table, data) {
       }
     }
 
-generateTable(table, toilets);
+//create CSV
+function createCsv() {
+    let csvContent = "data:text/csv;charset=utf-8,";
+    csvContent += Object.keys(toilets[0]).join(",") + "\r\n";
 
+    toilets.forEach(function(rowArray) {
+        let row = Object.values(rowArray).join(",");
+        csvContent += row + "\r\n";
+    });
 
-
-// function generateTable(table, data) {
-//     for (let element of data) {
-//       let row = table.insertRow();
-//       row.classList.add('tabel-data')
-//       for (key in element) {
-//           if(headerId.includes(key)){
-//             let cell = row.insertCell();
-//             let text = document.createTextNode(element[key]);
-//             cell.appendChild(text);    
-//           }
-//       }
-//     }
-//   }
+    var encodedUri = encodeURI(csvContent);
+    window.open(encodedUri); 
+}

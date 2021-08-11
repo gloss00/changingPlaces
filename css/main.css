@@ -67,3 +67,16 @@ body,
     background-color: #ddf2ff;
     color: #3f3f3f;
 }
+
+.button {
+    float: right;
+    font-size: large;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: lightgoldenrodyellow;
+}
