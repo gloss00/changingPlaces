@@ -11,7 +11,7 @@ body,
 
 /* containers */
 .banner-wrapper {
-    background-color: #3f3f3f;
+    background-color: #5A5A5A;
     padding: 15px;
     font-size: 2rem;
 }
@@ -22,7 +22,7 @@ body,
 }
 
 .service-name {
-    background-color: #3f3f3f;;
+    background-color:#5A5A5A;
 }
 
 .body-wrapper {
@@ -30,7 +30,7 @@ body,
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 30px;
-    border-top: 10px solid #000;
+    border-top: 7px solid #3f3f3f;
 }
 
 .foot-wrapper {
@@ -57,7 +57,7 @@ body,
 }
 
 .header {
-    background-color: #3f3f3f;
+    background-color: #5A5A5A;
     color: #fff;
     padding: 10px;
 }
