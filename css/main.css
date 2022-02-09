@@ -4,33 +4,33 @@ body,
 *,
 *::before,
 *::after {
-    font-family: Arial !important;
+    font-family: Arial;
     box-sizing: border-box;
     margin: 0;
 }
 
 /* containers */
 .banner-wrapper {
-    background-color: #5A5A5A;
+    background-color: #424245;
     padding: 15px;
     font-size: 2rem;
 }
 
 .banner {
     margin-left: 15%;
-    color: aliceblue;
+    color: #fff;
 }
 
 .service-name {
-    background-color:#5A5A5A;
+    background-color:#424245;
 }
 
 .body-wrapper {
-    height: 650px;
+    /* height: 650px; */
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 30px;
-    border-top: 7px solid #3f3f3f;
+    border-top: 7px solid #000000;
 }
 
 .foot-wrapper {
@@ -57,17 +57,12 @@ body,
 }
 
 .header {
-    background-color: #5A5A5A;
+    background-color: #424245;
     color: #fff;
     padding: 10px;
 }
 
 /* typography */
-.heading {
-    background-color: #ddf2ff;
-    color: #3f3f3f;
-}
-
 .button {
     float: right;
     font-size: large;

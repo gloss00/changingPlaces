@@ -3,7 +3,12 @@ document.getElementById("displayTable").addEventListener("click", function() {
     generateTable(table, toilets);
 });
 
-//create table
+let table = document.querySelector("table");
+let headings = ['Id', 'Name', 'Address', 'City', 'Postcode', 'Lat', 'Long',];
+let headerId = ['id', 'n', 'a1', 'c', 'p', 'la', 'lo'];
+
+generateTableHead(table);
+
 function generateTableHead(table) {
     let thead = table.createTHead();
     let row = thead.insertRow();
@@ -16,19 +21,14 @@ function generateTableHead(table) {
     });  
 }
 
-let table = document.querySelector("table");
-let headings = ['Id', 'Name', 'Address', 'City', 'Postcode', 'Lat', 'Long',];
-let headerId = ['id', 'n', 'a1', 'c', 'p', 'la', 'lo'];
-generateTableHead(table);
-
-function generateTable(table, data) {
-    for (let element of data) {
-      let row = table.insertRow();
-      row.classList.add('tabel-data')
-      for (let i = 0; i < headerId.length; i++) {
+function generateTable(table, toilets) {
+    toilets.forEach(toilet => {
+        let row = table.insertRow();
+        row.classList.add('tabel-data')
+        for (let i = 0; i < headerId.length; i++) {
             let cell = row.insertCell();
-            let text = document.createTextNode(element[headerId[i]]);
+            let text = document.createTextNode(toilet[headerId[i]]);
             cell.appendChild(text);    
           }
-      }
-    }
+    })
+}

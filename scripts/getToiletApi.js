@@ -6,7 +6,7 @@ document.getElementById("getToiletsApi").addEventListener("click", function() {
 function makeRequest() {
     const httpRequest = new XMLHttpRequest();
     // const url='https://jsonplaceholder.typicode.com/posts';
-    const url='https://changingplaces.uktoiletmap.org/toilet/view/72';
+    const url='https://changingplaces.uktoiletmap.org/api/getToilets';
     httpRequest.open("GET", url);
     httpRequest.send();
 
